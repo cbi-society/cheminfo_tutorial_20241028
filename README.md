@@ -14,13 +14,15 @@
 
 ## Prerequreiment
 
-- Please install anaconda
-- Please install REINVENT ver4
-- Please install Autodock Vina
-- Plaese install Maize-dev
-- I added an example for making environment
+- Install anaconda/mambaforge
+- Install REINVENT ver4
+- Install Autodock Vina
+- Install Gypsum-DL
+- Install Maize-contrib
 
 ### Install REINVENT4
+
+- I added an example for making environment
 
 [reinvent4](https://github.com/MolecularAI/REINVENT4)
 
@@ -47,6 +49,20 @@ $ sudo ln -s /opt/vina/bin/vina_split_1.2.5_linux_x86_64 /opt/vina/bin/vina
 $ export PATH=/opt/vina/bin/:$PATH
 ```
 
+### Install Gypsum-DL
+
+- Example code (Ubuntu)
+- if user don't have mpi, remove mpi4py from following command.
+
+```bash
+$ sudo apt info openmpi-bin
+$ mamba create --name gypsum python=3.10
+$ mamba activate gypsum
+$ mamba install -c conda-forge rdkit numpy scipy mpi4py
+$ gh repo clone jcheminform/gypsum_dl
+```
+
+
 ### Install Maize-contrib
 
 - Example code (Ubuntu)
@@ -59,6 +75,14 @@ $ mamba activate maize
 $ pip install --no-deps ./
 $ mamba install -c conda-forge pymol-open-source
 ```
+
+### Reference & Link
+
+- [Anaconda](https://github.com/conda-forge/miniforge)
+- [REINVENT ver4](https://jcheminf.biomedcentral.com/articles/10.1186/s13321-024-00812-5)
+- [Autodock Vina](https://vina.scripps.edu/)
+- [Gypsum-DL](https://jcheminf.biomedcentral.com/articles/10.1186/s13321-019-0358-3)
+- [Maize-contrib](https://github.com/MolecularAI/maize-contrib)
 
 
 ## Author
