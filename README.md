@@ -18,7 +18,7 @@
 - Install REINVENT ver4
 - Install Autodock Vina
 - Install Gypsum-DL
-- Install Maize-contrib
+- Install Maize-contrib ver 0.5.5
 
 ### Install REINVENT4
 
@@ -29,7 +29,7 @@
 - Example code (Ubuntu)
 
 ```bash
-$ gh repo clone MolecularAI/REINVENT4
+$ git clone https://github.com/MolecularAI/REINVENT4.git
 $ cd REINVENT4
 $ mamba create --name reinvent4 python=3.10
 $ mamba activate reinvent4
@@ -59,16 +59,15 @@ $ sudo apt info openmpi-bin
 $ mamba create --name gypsum python=3.10
 $ mamba activate gypsum
 $ mamba install -c conda-forge rdkit numpy scipy mpi4py
-$ gh repo clone jcheminform/gypsum_dl
+$ git clone https://github.com/durrantlab/gypsum_dl.git
 ```
-
 
 ### Install Maize-contrib
 
 - Example code (Ubuntu)
 
 ```bash
-$ gh repo clone MolecularAI/maize-contrib
+$ git clone https://github.com/MolecularAI/maize-contrib.git
 $ cd maize-contrib
 $ mamba env create -f env-users.yml
 $ mamba activate maize
@@ -84,7 +83,6 @@ $ mamba install -c conda-forge pymol-open-source
 - [Gypsum-DL](https://jcheminf.biomedcentral.com/articles/10.1186/s13321-019-0358-3)
 - [Maize-contrib](https://github.com/MolecularAI/maize-contrib)
 
-
 ## Author
 
-- Taka
+- Takayuki Serizawa
