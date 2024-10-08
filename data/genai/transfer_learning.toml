@@ -12,7 +12,7 @@ json_out_config = "json_transfer_learning.json"  # write this TOML to JSON
 
 [parameters]
 
-num_epochs = 3  # number of steps to run
+num_epochs = 300  # number of steps to run
 save_every_n_epochs = 3  # save checkpoint model file very N steps
 batch_size = 50
 num_refs = 100  # number of reference molecules randomly chosen for similarity
