@@ -15,7 +15,7 @@ json_out_config = "json_transfer_learning.json"  # write this TOML to JSON
 num_epochs = 300  # number of steps to run
 save_every_n_epochs = 3  # save checkpoint model file very N steps
 batch_size = 50
-num_refs = 100  # number of reference molecules randomly chosen for similarity
+num_refs = 5  # number of reference molecules randomly chosen for similarity
                 # set this to zero for large datasets (>200 molecules)!
 sample_batch_size = 100  # number of sampled molecules to compute sample loss
 # Uncomment one of the comment blocks below.  Each generator needs a model
@@ -23,9 +23,9 @@ sample_batch_size = 100  # number of sampled molecules to compute sample loss
 
 ## Reinvent
 input_model_file = "/home/iwatobipen/dev/REINVENT4/priors/reinvent.prior"
-smiles_file = "/home/iwatobipen/dev/CBI/cheminfo_tutorial_20241028/data/genai/TL_reinvent_100.smi"  # read 1st column
+smiles_file = "/home/iwatobipen/dev/CBI/cheminfo_tutorial_20241028/data/genai/ChEMBL_EGFR.csv"  # read 1st column
 output_model_file = "/home/iwatobipen/dev/CBI/cheminfo_tutorial_20241028/notebook/models/TL_reinvent.model"
-validation_smiles_file = "/home/iwatobipen/dev/CBI/cheminfo_tutorial_20241028/data/genai/TL_reinvent_100.smi"  
+validation_smiles_file = "/home/iwatobipen/dev/CBI/cheminfo_tutorial_20241028/data/genai/ChEMBL_EGFR.csv"  
 
 ## Mol2Mol
 #input_model_file = "/home/iwatobipen/dev/REINVENT4/priors/mol2mol_scaffold_generic.prior"
