@@ -98,6 +98,19 @@ $ conda install -c conda-forge pymol-open-source
 
 ### Misc
 
+- maize cofiguration file
+  - By default Config will look for a configuration file named maize.toml in $XDG_CONFIG_HOME (usually at ~/.config/,) [detail](https://molecularai.github.io/maize/docs/userguide.html)
+  - The repo provides example maize.toml for SBDD WF. We will configure it in this handson training ;-)
+
+  ```bash
+  $ echo $XDG_CONFIG_HOME
+  /home/iwatobipen/.config
+  $ cat /home/iwatobipen/.config/maize.toml
+  # maize global configuration file example
+  # Where to save temporary files and all workflow directories
+  scratch = "/tmp"
+  ```
+
 - Tested OS
   - [x] Ubuntu24.04
   - [ ] Ubuntu22.04
