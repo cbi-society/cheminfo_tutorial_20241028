@@ -163,7 +163,7 @@ cython_debug/
 
 ###
 dock_res/*.sdf
-models/*.chkpt
+notebook/models/*.chkpt
 tb_TL/
 _sampling.json
 _TL_sampling.json
