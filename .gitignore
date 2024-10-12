@@ -169,4 +169,8 @@ _sampling.json
 _TL_sampling.json
 TL.log
 TL_sampling.log
-xtbres/*
+notebook/xtbres/*
+notebook/TL_sampling.csv
+notebook/sampling.csv
+notebook/json_transfer_learning.json
+notebook/gypsum_out/*
