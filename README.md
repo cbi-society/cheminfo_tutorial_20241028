@@ -72,6 +72,7 @@ $ git clone https://github.com/durrantlab/gypsum_dl.git
 
 ### Install Maize-contrib
 
+- In the tutorial we'll use maize env mainly and call other environment from this env. So jupyter-lab or notebook should be install this env.
 - Example code (Ubuntu24.04)
 
 ```bash
