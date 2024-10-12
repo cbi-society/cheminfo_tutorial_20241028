@@ -1,0 +1,7 @@
+[vina]
+python = "/home/iwatobipen/miniforge3/envs/maize-dev/bin/python"
+commands.vina = "/opt/vina/bin/vina"
+
+[gypsum]
+scripts.gypsum.interpreter = "/home/iwatobipen/miniforge3/envs/gypsum/bin/python"
+scripts.gypsum.location = "/home/iwatobipen/dev/gypsum_dl/run_gypsum_dl.py"
