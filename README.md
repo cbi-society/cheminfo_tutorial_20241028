@@ -118,6 +118,8 @@ $ git clone https://github.com/Mishima-syk/maize.git
 $ cd maize
 $ pip install --no-deps .
 $ conda install -c conda-forge pymol-open-source jupyter
+## data/maize.tomlを書き換えます。
+$ export XDG_CONFIG_HOME="/Users/kzfm/CBI/cheminfo_tutorial_20241028/data" #pathはユーザーごとに異なります
 ```
 
 ### Reference & Link
