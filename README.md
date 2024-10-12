@@ -149,11 +149,12 @@ $ conda install -c conda-forge pymol-open-source jupyter
   - [ ] Ubuntu22.04
   - [ ] MacOS M1
   - [ ] MacOS M2
+  - [x] MacOS14 M3
   - [ ] Windows
 
 ## Author
 
-- Kazufumi Okawa
+- Kazufumi Ohkawa
 - Koichiro Arai
 - Natsumi Miyano
 - Kazutoshi Takahashi
