@@ -76,6 +76,14 @@ $ conda install -c conda-forge pymol-open-source
 ```
 ### FOR MacOS 14.61(M3)
 
+Set the directory to be used for the hands-on session.
+
+```bash
+$ cd ~
+$ mkdir CBI
+$ cd CBI
+```
+
 #### REINVENT4
 
 ```bash
