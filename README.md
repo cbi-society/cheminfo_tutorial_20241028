@@ -20,14 +20,8 @@
 - Install Gypsum-DL
 - Install Maize-contrib ver 0.5.5
 
-### Tips
-
-- mamba is a reimplementation of the conda package manager in C++. And it works faster than conda but it maight be cause problem for building process.
-- Following examples use conda but you can use mama at your own risk.
-- [miniconda](https://docs.anaconda.com/miniconda/)
-- [mambaforge](https://github.com/conda-forge/miniforge)
-
 ## INSTALL
+The following example uses [conda](https://docs.anaconda.com/miniconda/) for package management, but it is possible to use [mamba](https://github.com/conda-forge/miniforge) instead. mamba is a C++ re-implementation of the conda package manager, which is faster than conda but has problems with the build process in some environments.
 
 ### FOR Ubuntu24.04
 
