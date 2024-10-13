@@ -82,11 +82,11 @@ $ cd CBI
 #### REINVENT4
 
 ```bash
-$ git clone https://github.com/MolecularAI/REINVENT4.git
+$ git clone https://github.com/Mishima-syk/REINVENT4.git
 $ cd REINVENT4
-$ conda create --name reinvent4 python=3.10
+$ conda create --name reinvent4 python=3.11
 $ conda activate reinvent4
-$ pip install torch
+$ pip install -r requirements-macOS.lock
 $ pip install --no-deps .
 ```
 
