@@ -1,5 +1,5 @@
 [vina]
-python = "/home/iwatobipen/miniforge3/envs/maize-dev/bin/python"
+python = "/home/iwatobipen/miniforge3/envs/maize/bin/python"
 commands.vina = "/opt/vina/bin/vina"
 
 [gypsum]
