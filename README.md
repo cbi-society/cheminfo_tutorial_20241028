@@ -132,9 +132,8 @@ $ conda install -c conda-forge pymol-open-source jupyter
 - [Gypsum-DL](https://jcheminf.biomedcentral.com/articles/10.1186/s13321-019-0358-3)
 - [Maize-contrib](https://github.com/MolecularAI/maize-contrib)
 
-[!NOTE]
+### *IMPORTANT* Pre-requirements
 
-- Pre-requirements
 - Please modify following toml files before participating hands-on training
 - {put your environment here!} part should be changed as your own environment value.
 - modified files should be saved as name without '_tmpl'
