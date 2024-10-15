@@ -132,6 +132,22 @@ $ conda install -c conda-forge pymol-open-source jupyter
 - [Gypsum-DL](https://jcheminf.biomedcentral.com/articles/10.1186/s13321-019-0358-3)
 - [Maize-contrib](https://github.com/MolecularAI/maize-contrib)
 
+[!NOTE]
+
+- Pre-requirements
+- Please modify following toml files before participating hands-on training
+- {put your environment here!} part should be changed as your own environment value.
+- modified files should be saved as name without '_tmpl'
+  - ./data/maize_tmpl.toml
+  - ./data/genai/transfer_learning_tmpl.toml
+  - ./data/genai/sampling_tmpl.toml
+  - ./data/genai/TL_sampling_tmpl.toml
+- To run the code, XDG_CONFIG_HOME variable should be set and the directory should contain maize.toml which is modefied above procedure. The procedure is shown below.
+
+```bash
+export XDG_CONFIG_HOME='where your maize.toml placed':$XDG_CONFIG_HOME
+```
+
 ### Misc
 
 - maize cofiguration file
@@ -150,6 +166,7 @@ $ conda install -c conda-forge pymol-open-source jupyter
 - Tested OS
   - [x] Ubuntu24.04
   - [ ] Ubuntu22.04
+  - [ ] CentOS
   - [ ] MacOS M1
   - [ ] MacOS M2
   - [x] MacOS14 M3
