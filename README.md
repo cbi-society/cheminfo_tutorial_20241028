@@ -117,6 +117,7 @@ $ cd maize-contrib
 $ conda env create -f env-users.ymlhttps://github.com/DavidAnson/markdownlint/blob/v0.35.0/doc/md014.md
 $ conda activate maize
 $ pip install --no-deps .
+$ cd ..
 $ git clone https://github.com/Mishima-syk/maize.git
 $ cd maize
 $ pip install --no-deps .
