@@ -61,12 +61,12 @@ $ git clone https://github.com/durrantlab/gypsum_dl.git
 #### Maize-contrib
 
 ```bash
-$ git clone https://github.com/MolecularAI/maize-contrib.git
+$ git clone https://github.com/cbi-society/maize-contrib.git
 $ cd maize-contrib
-$ conda env create -f env-users.ymlhttps://github.com/DavidAnson/markdownlint/blob/v0.35.0/doc/md014.md
+$ conda env create -f env-users.yml
 $ conda activate maize
 $ pip install --no-deps ./
-$ conda install -c conda-forge pymol-open-source
+$ conda install -c conda-forge pymol-open-source jupyter
 ```
 
 ### FOR MacOS 14.61(M3)
@@ -114,7 +114,7 @@ $ git clone https://github.com/durrantlab/gypsum_dl.git
 ```bash
 $ git clone https://github.com/MolecularAI/maize-contrib.git
 $ cd maize-contrib
-$ conda env create -f env-users.ymlhttps://github.com/DavidAnson/markdownlint/blob/v0.35.0/doc/md014.md
+$ conda env create -f env-users.yml
 $ conda activate maize
 $ pip install --no-deps .
 $ cd ..
