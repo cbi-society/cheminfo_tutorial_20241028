@@ -112,7 +112,7 @@ $ git clone https://github.com/durrantlab/gypsum_dl.git
 #### Maize-contrib & Maize
 
 ```bash
-$ git clone https://github.com/MolecularAI/maize-contrib.git
+$ git clone https://github.com/cbi-society/maize-contrib.git
 $ cd maize-contrib
 $ conda env create -f env-users.yml
 $ conda activate maize
