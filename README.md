@@ -21,6 +21,7 @@
 - Install Maize-contrib ver 0.5.5
 
 ## INSTALL
+
 The following example uses [conda](https://docs.anaconda.com/miniconda/) for package management, but it is possible to use [mamba](https://github.com/conda-forge/miniforge) instead. mamba is a C++ re-implementation of the conda package manager, which is faster than conda but has problems with the build process in some environments.
 
 ### FOR Ubuntu24.04
@@ -37,21 +38,23 @@ $ pip install --no-deps .
 ```
 
 #### Autodock Vina
+
 The example put vina on /opt/vina but you can put vina any place.
 
 ```bash
-$ wget https://github.com/ccsb-scripps/AutoDock-Vina/releases/download/v1.2.5/vina_split_1.2.5_linux_x86_64
+$ wget https://github.com/ccsb-scripps/AutoDock-Vina/releases/download/v1.2.5/vina_1.2.5_linux_x86_64
 $ sudo mkdir -p /opt/vina/bin/
-$ sudo mv vina_split_1.2.5_linux_x86_64 /opt/vina/bin
-$ sudo ln -s /opt/vina/bin/vina_split_1.2.5_linux_x86_64 /opt/vina/bin/vina
+$ sudo mv vina_1.2.5_linux_x86_64 /opt/vina/bin
+$ sudo ln -s /opt/vina/bin/vina_1.2.5_linux_x86_64 /opt/vina/bin/vina
 $ export PATH=/opt/vina/bin/:$PATH
 ```
 
 #### Gypsum-DL
+
 if you don't have mpi, remove mpi4py from the following command.
 
 ```bash
-$ sudo apt info openmpi-bin
+$ sudo apt install openmpi-bin
 $ conda create --name gypsum python=3.10
 $ conda activate gypsum
 $ conda install -c conda-forge rdkit numpy scipy mpi4py
@@ -145,7 +148,7 @@ $ conda install -c conda-forge pymol-open-source jupyter
 - To run the code, XDG_CONFIG_HOME variable should be set and the directory should contain maize.toml which is modefied above procedure. The procedure is shown below.
 
 ```bash
-export XDG_CONFIG_HOME='where your maize.toml placed':$XDG_CONFIG_HOME
+export XDG_CONFIG_HOME='{where your maize.toml placed}':$XDG_CONFIG_HOME
 ```
 
 ### Misc
