@@ -174,3 +174,7 @@ notebook/TL_sampling.csv
 notebook/sampling.csv
 notebook/json_transfer_learning.json
 notebook/gypsum_out/*
+data/maize.toml
+data/genai/transfer_learning.toml
+data/genai/sampling.toml
+data/genai/TL_sampling.toml
