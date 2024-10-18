@@ -201,6 +201,7 @@ $ conda install -c conda-forge jupyter
 
 ### *IMPORTANT* Pre-requirements
 
+- *./data以下にて配布しているxx_tmpl.tomlファイルはテンプレートファイルです。これを以下の手順に沿って各自の環境に書き換えて下さい。当日作業する場合、時間がかかりハンズオンについていけなくなる懸念があります。*
 - Please modify following toml files before participating hands-on training
 - {put your environment here!} part should be changed as your own environment value.
 - modified files should be saved as name without '_tmpl'
