@@ -127,6 +127,68 @@ $ pip install --no-deps .
 $ conda install -c conda-forge pymol-open-source jupyter
 ```
 
+### FOR Windows 11
+
+#### NOTE
+
+- Following code run on WSL2. Not pure windows environment.
+- WSL users should install pymol in another environment because WSL doesn't have GUI interface.
+- To avoid error, I recommend to run following command before installing other packages.
+
+```bash
+# https://uwanosora22.hatenablog.com/entry/2022/03/15/125128
+$ git config --global http.version HTTP/1.1
+# https://web-survivor.com/useful/git-error-curl/
+$ git config --global http.postBuffer 524288000
+
+```
+
+#### REINVENT4
+
+```bash
+$ git clone https://github.com/MolecularAI/REINVENT4.git
+$ cd REINVENT4
+$ conda create --name reinvent4 python=3.10
+$ conda activate reinvent4
+$ pip install torch==2.2.1 torchvision==0.17.1 torchaudio==2.2.1 --index-url https://download.pytorch.org/whl/rocm5.7
+$ pip install --no-deps .
+```
+
+#### Autodock Vina
+
+The example put vina on /opt/vina but you can put vina any place.
+
+```bash
+$ wget https://github.com/ccsb-scripps/AutoDock-Vina/releases/download/v1.2.5/vina_1.2.5_linux_x86_64
+$ sudo mkdir -p /opt/vina/bin/
+$ sudo mv vina_1.2.5_linux_x86_64 /opt/vina/bin
+$ sudo ln -s /opt/vina/bin/vina_1.2.5_linux_x86_64 /opt/vina/bin/vina
+$ export PATH=/opt/vina/bin/:$PATH
+```
+
+#### Gypsum-DL
+
+if you don't have mpi, remove mpi4py from the following command.
+
+```bash
+$ sudo apt install openmpi-bin
+$ conda create --name gypsum python=3.10
+$ conda activate gypsum
+$ conda install -c conda-forge rdkit numpy scipy mpi4py
+$ git clone https://github.com/durrantlab/gypsum_dl.git
+```
+
+#### Maize-contrib
+
+```bash
+$ git clone https://github.com/cbi-society/maize-contrib.git
+$ cd maize-contrib
+$ conda env create -f env-users.yml
+$ conda activate maize
+$ pip install --no-deps ./
+$ conda install -c conda-forge jupyter
+```
+
 ### Reference & Link
 
 - [Anaconda](https://github.com/conda-forge/miniforge)
@@ -134,6 +196,7 @@ $ conda install -c conda-forge pymol-open-source jupyter
 - [reinvent4 Github](https://github.com/MolecularAI/REINVENT4)
 - [Autodock Vina](https://vina.scripps.edu/)
 - [Gypsum-DL](https://jcheminf.biomedcentral.com/articles/10.1186/s13321-019-0358-3)
+- [Gypsum-DL Github](https://github.com/durrantlab/gypsum_dl)
 - [Maize-contrib](https://github.com/MolecularAI/maize-contrib)
 
 ### *IMPORTANT* Pre-requirements
@@ -168,12 +231,12 @@ export XDG_CONFIG_HOME='{where your maize.toml placed}':$XDG_CONFIG_HOME
 
 - Tested OS
   - [x] Ubuntu24.04
-  - [ ] Ubuntu22.04
+  - [x] Ubuntu22.04
   - [ ] CentOS
   - [ ] MacOS M1
   - [ ] MacOS M2
   - [x] MacOS14 M3
-  - [ ] Windows
+  - [x] WSL on Windows11
 
 ## Author
 
