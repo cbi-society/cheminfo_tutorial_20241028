@@ -75,7 +75,7 @@ $ conda install -c conda-forge pymol-open-source jupyter
 ### FOR MacOS 
 The environment in which the installation was verified is OS14 with M3 chip MacBook Air.
 
-Set the directory to be used for the hands-on session.
+Set the directory to be used for the hands-on session. Installation of the respective packages is performed in this directory.
 
 ```bash
 $ cd ~
