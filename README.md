@@ -72,7 +72,8 @@ $ pip install --no-deps ./
 $ conda install -c conda-forge pymol-open-source jupyter
 ```
 
-### FOR MacOS 14.61(M3)
+### FOR MacOS 
+The environment in which the installation was verified is OS14 with M3 chip MacBook Air.
 
 Set the directory to be used for the hands-on session.
 
@@ -105,7 +106,6 @@ $ sudo mv autodock_vina_1_1_2_mac_catalina_64bit/bin/vina /opt/vina/bin/.
 #### Gypsum-DL
 
 ```bash
-$ sudo apt info openmpi-bin
 $ conda create --name gypsum python=3.10
 $ conda activate gypsum
 $ conda install -c conda-forge rdkit numpy scipy
